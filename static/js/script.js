@@ -13,7 +13,7 @@ $(document).ready(function () {
 
     // Create container for "Lucky 6 Numbers"
     const luckyNumbersContainer = $('<div class="lucky-numbers-container"></div>');
-    const luckyHeader = $('<h2>Lucky 6 Numbers</h2>');
+    const luckyHeader = $('<h2>Lucky Numbers</h2>');
     const luckyNumbers = $('<div class="lucky-numbers"></div>');
     luckyNumbersContainer.append(luckyHeader).append(luckyNumbers);
     $('body').append(luckyNumbersContainer);
@@ -124,7 +124,7 @@ $(document).ready(function () {
     // Adjust "Lucky 6 Numbers" container position
     luckyNumbersContainer.css({
         position: 'absolute',
-        top: '60%', // Adjusted position
+        top: '55%', // Adjusted position
         left: '50%',
         transform: 'translate(-50%, -50%)',
         textAlign: 'center'
