@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='mainCss.css') }}"> -->
+    <!-- <script src="{{url_for ('static', filename='js/script.js')}}" > </script> -->
+
+    <link rel="stylesheet" href="static/mainCss.css">
+    <script src="static/js/script.js"></script>
+    <title>LUCKyNumber</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="/">LUCKyNumber | <span>Is your name lucky...</span></a>
+            <!-- <img class="mobile-menu" src="../images/menu.svg" alt="Open nav"> -->
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <section class="name-form">
+            <div class="container">
+                <div class="input-wrapper">
+                    <input
+                        type="text"
+                        class="name-input"
+                        id="name-input"
+                        placeholder="Lucky Name"
+                        required
+                    />
+                    <div class="number-display" id="number-display"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
