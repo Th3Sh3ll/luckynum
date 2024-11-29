@@ -39,7 +39,7 @@ $(document).ready(function () {
             if (/[a-z]/.test(letter)) {
                 const baseNumber = letterToNumber[char];
                 if (letterCounts[letter] > 1) {
-                    numbers.push(Math.round(baseNumber + baseNumber - totalLetters));
+                    numbers.push(Math.round(baseNumber + baseNumber / totalLetters));
                 } else {
                     numbers.push(baseNumber);
                 }
