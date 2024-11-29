@@ -39,7 +39,7 @@ $(document).ready(function () {
             if (/[a-z]/.test(letter)) {
                 const baseNumber = letterToNumber[char];
                 if (letterCounts[letter] > 1) {
-                    numbers.push(Math.round(baseNumber + baseNumber / totalLetters));
+                    numbers.push(Math.round(baseNumber + baseNumber - totalLetters));
                 } else {
                     numbers.push(baseNumber);
                 }
@@ -81,7 +81,7 @@ $(document).ready(function () {
                     transform: 'scale(1)',
                     transition: 'transform 0.5s ease, opacity 0.5s ease'
                 });
-            }, index * 1000); // Delay for each number (3 seconds)
+            }, index * 1500); // Delay for each number (3 seconds)
 
             luckyNumbers.append(numElement);
         });
