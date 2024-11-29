@@ -124,7 +124,7 @@ $(document).ready(function () {
     // Adjust "Lucky 6 Numbers" container position
     luckyNumbersContainer.css({
         position: 'absolute',
-        top: '55%', // Adjusted position
+        top: '45%', // Adjusted position
         left: '50%',
         transform: 'translate(-50%, -50%)',
         textAlign: 'center'
